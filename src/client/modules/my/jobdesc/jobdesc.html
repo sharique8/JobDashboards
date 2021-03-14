@@ -1,0 +1,36 @@
+<template>
+    <div class="cardone">
+        <article class="slds-card">
+            <div class="slds-grid slds-p-around_large">
+                <div class="slds-col slds-size_1-of-3 ">
+                    <img src={selectedjob.company_logo} style="height:90px"/>
+                </div>
+                <div class="slds-col slds-size_1-of-3 center">
+                    <h1 class="slds-text-heading_large">{selectedjob.company}</h1>
+                </div>
+                <div class="slds-col slds-size_1-of-3 center">
+                    <a class="slds-button slds-button_success" href={selectedjob.company_url}>Company Website</a>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="cardtwo">
+        <article class="slds-card">
+            <div class="slds-grid slds-p-around_large">
+                <div class="slds-col slds-size_1-of-2 slds-text-body_small">
+                    Posted On: {selectedjob.created_at}
+                </div>
+                <div class="slds-col slds-size_1-of-2" >
+                    <a class="slds-button slds-button_success slds-float_right slds-p-around_small" href="#">Apply Now</a>
+                </div>
+            </div>
+            <div class="slds-p-around_medium">
+                <h1 class="slds-text-heading_large">{selectedjob.title}</h1>
+            </div>
+            <div class="slds-p-left_large ">
+                <span class="slds-badge slds-theme_error">{selectedjob.type}</span>
+            </div>
+            <div class="contentbody slds-p-around_x-large"></div>
+        </article>
+    </div>
+</template>

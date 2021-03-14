@@ -1,0 +1,10 @@
+nav {
+    color : white;
+    background : rgb(146, 218, 146);
+    font-size : 24px;
+    padding: 1rem 1rem 4rem;
+}
+.slds-button{
+    color:rgb(146, 218, 146);
+    border: 2px rgb(146,218,146);
+}

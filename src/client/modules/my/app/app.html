@@ -1,0 +1,20 @@
+<template>
+    <div class="slds-is-fixed sticky">
+    <my-navbar homevisible={clickedviewdetail} onbackhome={homehandler}></my-navbar>
+    <template if:false={clickedviewdetail}>
+        <my-searchbar></my-searchbar>
+    </template>
+   </div>
+   <template if:true={clickedviewdetail}>
+    <my-jobdesc selectedjob={selectedjob}></my-jobdesc>
+    </template>
+    <div class="slds-grid slds-wrap cardmargin" if:false={clickedviewdetail}> 
+               <template for:each={jobs} for:item="job">
+                 <div key={job.id} class="slds-col slds-size_4-of-12">
+                     <div class="slds-m-around_medium">
+                        <my-card job={job} onselect={selecthandler}> </my-card> 
+                     </div>
+            </div>
+        </template>
+    </div>
+</template>

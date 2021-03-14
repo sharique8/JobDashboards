@@ -1,0 +1,16 @@
+.customcard{
+    background:offwhite;
+    box-shadow: 0px 0px 1px;
+}
+.btnstyle{
+    background:rgb(82, 205, 236);
+    color:whitesmoke;
+    border:none;
+    outline:none;
+    transition-duration: 0.4s;
+}
+.btnstyle:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: whitesmoke;
+    color: rgb(82, 205, 236);;
+  }

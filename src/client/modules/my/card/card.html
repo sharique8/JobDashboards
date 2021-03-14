@@ -1,0 +1,25 @@
+<template>
+    <article class="slds-card customcard">
+      <div class="slds-m-around_small">
+      <div>
+        <span class="slds-text-body_small">Posted On: {job.created_at}</span>
+        <span class="slds-badge slds-theme_error" style="float:right">{job.type}</span>
+      </div>
+        <div class="slds-m-vertical_small" >
+          <span class="slds-text-color_success slds-text-font_monospace slds-text-body_regular">{job.title}</span>
+        </div>
+        <div class="slds-m-vertical_small" style="background: green;">
+          <span class="slds-float_right slds-text-body_small">{job.company}</span>
+        </div>
+        <div class="">
+          <div class="slds-m-vertical_x-large slds-var-p-top_small">
+            <span class="slds-text-body_small">Location: {job.location}</span>
+            <span class="slds-float_right">
+              <button class="btnstyle"   onclick={viewdetailhandler}><span class="slds-text-body_small">View Details</span></button>
+            </span>
+          </div>
+        </div>
+        
+      </div>
+      </article>   
+</template>

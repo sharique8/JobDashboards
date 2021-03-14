@@ -1,0 +1,38 @@
+<template>
+    <div class="slds-grid slds-wrap bg">
+        <div class="slds-col slds-size_4-of-12">
+            <form>
+                <div class="input-container justify">
+                    <img src="resources/images/search.svg" class="icon" />
+                    <input class="input-field" type="text" placeholder="Search by Text..." name="textsearch"
+                        onkeyup={changehandler} />
+                </div>
+            </form>
+        </div>
+        <div class="slds-col slds-size_4-of-12">
+            <form>
+                <div class="input-container justify">
+                    <img src="resources/images/checkin.svg" class="icon" />
+                    <input class="input-field" type="text" placeholder="Search by location..." name="locsearch"
+                        onkeyup={changehandler} />
+                </div>
+            </form>
+        </div>
+        <div class="slds-col slds-size_4-of-12">
+            <form>
+                <div class="input-container justify">
+                    <span style="margin-right:20px;margin-top:10px;">
+                        <input type="checkbox" name="permanent" onchange={changehandler}/>
+                        <label for="permanent" >Permanent Jobs</label>
+                    </span>
+                    
+                    <button class="slds-button slds-button_success">Search</button>
+
+                </div>
+
+
+
+            </form>
+        </div>
+    </div>
+</template>
