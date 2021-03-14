@@ -10,8 +10,8 @@ export default class Jobdesc extends lightningElementBootstrap{
           }
           if(this.selectedjob.description)
           {
-            //const cbody = this.template.querySelector('.contentbody')
-            //cbody.innerHTML = this.selectedjob.description
+            const cbody = this.template.querySelector('.contentbody')
+            cbody.innerHTML = this.selectedjob.description
             this.onetimeload = true
           }
           
